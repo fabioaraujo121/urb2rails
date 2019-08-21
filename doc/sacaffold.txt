@@ -1,0 +1,13 @@
+rails g model User name:string role:integer
+
+rails g model Citizen name:string cpf:string cnpj:string user:belongs_to
+
+rails g model Kind name:string nature:string user:belongs_to
+
+rails g model KindStep name:string user:belongs_to
+
+rails g model Demand description:string status:integer user:belongs_to
+
+rails g model Step kind_step:belongs_to demand:belongs_to user:belongs_to
+
+rails g model Owner citizen:belongs_to demand:belongs_to user:belongs_to
