@@ -144,6 +144,79 @@ pt-BR:
       citizen:
         one: "Cidadão"
         other: "Cidadãos"
+      demand:
+        one: "Processo"
+        other: "Processos"
+      kind: 
+        one: "Tipo"
+        other: "Tipos"
+      kind_step:
+        one: "Passo do Tipo"
+        other: "Passos do Tipo"
+      owner:
+        one: "Propritário"
+        other: "Propritários"
+      step:
+        one: "Passo"
+        other: "Passos"
+      user:
+        one: "Usuário"
+        other: "Usuários"
+    attributes:
+      citizen: 
+        name: "Nome"
+        cpf: "CPF"
+        cnpj: "CNPJ"
+        user: "Usuário Responsável"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      step:
+        kind_step: "Tipo do Passo"
+        demand: "Processo"
+        user: "Usuário Responsável"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      kind_step: 
+        name: "Nome"
+        user: "Usuário Responsável"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      demand:
+        description: "Descrição"
+        status: "Status"
+        user: "Usuário Responsável"
+        owners: "Propritários"
+        steps: "Passos Dados"
+        kind: "Tipo"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      owner:
+        citizen: "Cidadão"
+        demand: "Processo"
+        user: "Usuário Responsável"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      kind:
+        name: "Nome"
+        nature: "Natureza"
+        demands: "Processos"
+        user: "Usuário Responsável"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      user:
+        name: "Nome"
+        role: "Perfil"
+        email: "E-mail"
+        password: "Senha"
+        password_confirmation: "Confirmação de Senha"
+        reset_password_sent_at: "Reset password sent at"
+        remenber_created_at: "Lembrar de mim"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+
+
+
+
     errors:
       template:
         header:

@@ -4,7 +4,7 @@ class CreateCitizens < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :cpf
       t.string :cnpj
-      t.belongs_to :user, null: false, foreign_key: true
+      t.belongs_to :user, foreign_key: true
 
       t.timestamps
     end

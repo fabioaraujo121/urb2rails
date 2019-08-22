@@ -10,8 +10,9 @@ This system deals with the process management of the Secretariat of Urbanism and
 * Rails: **6.0.0**
 
 ## Deployment
-1. rails db:create db:migrate db:seed
-2. Done!
+1. bundle install
+2. rails db:create db:migrate db:seed
+3. Done!
 
 ## TODO
 

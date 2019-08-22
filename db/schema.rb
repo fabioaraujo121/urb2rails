@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2019_08_20_155450) do
     t.string "name"
     t.string "cpf"
     t.string "cnpj"
-    t.bigint "user_id", null: false
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_citizens_on_user_id"
@@ -28,15 +28,17 @@ ActiveRecord::Schema.define(version: 2019_08_20_155450) do
   create_table "demands", force: :cascade do |t|
     t.string "description"
     t.integer "status"
-    t.bigint "user_id", null: false
+    t.bigint "kind_id"
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["kind_id"], name: "index_demands_on_kind_id"
     t.index ["user_id"], name: "index_demands_on_user_id"
   end
 
   create_table "kind_steps", force: :cascade do |t|
     t.string "name"
-    t.bigint "user_id", null: false
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_kind_steps_on_user_id"
@@ -45,7 +47,7 @@ ActiveRecord::Schema.define(version: 2019_08_20_155450) do
   create_table "kinds", force: :cascade do |t|
     t.string "name"
     t.string "nature"
-    t.bigint "user_id", null: false
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_kinds_on_user_id"
@@ -54,7 +56,7 @@ ActiveRecord::Schema.define(version: 2019_08_20_155450) do
   create_table "owners", force: :cascade do |t|
     t.bigint "citizen_id", null: false
     t.bigint "demand_id", null: false
-    t.bigint "user_id", null: false
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["citizen_id"], name: "index_owners_on_citizen_id"
@@ -65,7 +67,7 @@ ActiveRecord::Schema.define(version: 2019_08_20_155450) do
   create_table "steps", force: :cascade do |t|
     t.bigint "kind_step_id", null: false
     t.bigint "demand_id", null: false
-    t.bigint "user_id", null: false
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["demand_id"], name: "index_steps_on_demand_id"
@@ -88,6 +90,7 @@ ActiveRecord::Schema.define(version: 2019_08_20_155450) do
   end
 
   add_foreign_key "citizens", "users"
+  add_foreign_key "demands", "kinds"
   add_foreign_key "demands", "users"
   add_foreign_key "kind_steps", "users"
   add_foreign_key "kinds", "users"

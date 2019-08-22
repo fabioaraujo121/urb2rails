@@ -5,5 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-#User.create!(name: "Fábio", email: "fabioaraujo121@gmail.com", password: "123456")
+User.create!(name: "Fábio", email: "fabioaraujo121@gmail.com", password: "123456") if User.find_by_email("fabioaraujo121@gmail.com").nil?
