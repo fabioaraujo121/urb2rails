@@ -38,9 +38,12 @@ ActiveRecord::Schema.define(version: 2019_08_20_155450) do
 
   create_table "kind_steps", force: :cascade do |t|
     t.string "name"
+    t.boolean "valid_time", default: true
+    t.bigint "kind_id"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["kind_id"], name: "index_kind_steps_on_kind_id"
     t.index ["user_id"], name: "index_kind_steps_on_user_id"
   end
 
@@ -92,6 +95,7 @@ ActiveRecord::Schema.define(version: 2019_08_20_155450) do
   add_foreign_key "citizens", "users"
   add_foreign_key "demands", "kinds"
   add_foreign_key "demands", "users"
+  add_foreign_key "kind_steps", "kinds"
   add_foreign_key "kind_steps", "users"
   add_foreign_key "kinds", "users"
   add_foreign_key "owners", "citizens"

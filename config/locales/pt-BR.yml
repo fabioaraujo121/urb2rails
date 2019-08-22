@@ -179,6 +179,7 @@ pt-BR:
       kind_step: 
         name: "Nome"
         user: "Usuário Responsável"
+        valid_time: "Tempo Válido"
         created_at: "Criado em"
         updated_at: "Atualizado em"
       demand:
@@ -213,10 +214,6 @@ pt-BR:
         remenber_created_at: "Lembrar de mim"
         created_at: "Criado em"
         updated_at: "Atualizado em"
-
-
-
-
     errors:
       template:
         header:
