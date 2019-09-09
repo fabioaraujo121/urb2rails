@@ -41,6 +41,10 @@ pt-BR:
       message: "Mensagem"
       last_created: "Último criado"
     actions:
+      next_step:
+        menu: "Próximo Passo"
+        breadcrumb: "Próximo Passo do Processo"
+        title: "Próximo Passo do Processo"
       dashboard:
         title: "Administração do Site"
         menu: "Dashboard"

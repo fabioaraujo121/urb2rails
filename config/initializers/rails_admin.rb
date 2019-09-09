@@ -1,4 +1,6 @@
 RailsAdmin.config do |config|
+  require Rails.root.join('lib', 'rails_admin', 'dashboard.rb')
+  require Rails.root.join('lib', 'rails_admin', 'next_step.rb')
 
   ### Popular gems integration
 
@@ -33,6 +35,7 @@ RailsAdmin.config do |config|
     edit
     delete
     show_in_app
+    next_step
 
     ## With an audit adapter, you can add:
     # history_index

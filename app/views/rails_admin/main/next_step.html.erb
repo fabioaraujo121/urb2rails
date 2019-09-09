@@ -1,0 +1,35 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<%= form_tag(next_step_path, {method: :post}) do %>
+				<div class="form-group">
+					<label for="step">Próximo Passo:</label>
+					<%= select_tag "step", options_from_collection_for_select(@kind_steps, "id", "name"), prompt: "Selecione o Passo", class: "form-control", onchange: "this.form.submit();" %>
+				</div> 
+			<% end %>
+		</div>		
+	</div>	
+
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<table class="table">
+    			<thead>
+      				<tr>
+        				<th>Passo</th>
+        				<th>Responsável</th>
+        				<th>Em</th>
+        			</tr>
+    			</thead>
+    			<tbody>
+    				<% @object.steps.order(created_at: :desc).each do |step|%>
+      				<tr>
+        				<td><%= step.kind_step.name %></td>
+        				<td><%= step.user.name %></td>
+        				<td><%= l step.created_at %></td>
+        			</tr>
+        			<% end %>
+        		</tbody>
+        	</table>
+		</div>		
+	</div>	
+</div>

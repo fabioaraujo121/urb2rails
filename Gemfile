@@ -52,3 +52,5 @@ gem 'remotipart', '~> 1.2'
 gem 'rails_admin_material'
 gem 'rails_admin', '~> 2.0'
 gem "devise"
+gem 'descriptive-statistics'
+gem 'time_difference'
