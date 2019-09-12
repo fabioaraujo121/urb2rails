@@ -4,6 +4,8 @@ This is the URB's process monitoring from PMC.
 
 This system deals with the process management of the Secretariat of Urbanism and Works.
 
+The application starts at /adm log in and enjoy
+
 
 ## Versions
 * Ruby: **2.6.3**
@@ -20,3 +22,4 @@ This system deals with the process management of the Secretariat of Urbanism and
 - [x] Process CRUD
 - [ ] Visual Dashboard
 - [ ] Search by protocol to check status (without login)
+- [ ] Traduzir enum
