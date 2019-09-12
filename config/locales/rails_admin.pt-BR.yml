@@ -41,6 +41,10 @@ pt-BR:
       message: "Mensagem"
       last_created: "Último criado"
     actions:
+      done:
+        menu: "Finalizar Processo"
+        breadcrumb: "Finalizar Processo"
+        title: "Finalizar Processo"
       next_step:
         menu: "Próximo Passo"
         breadcrumb: "Próximo Passo do Processo"
