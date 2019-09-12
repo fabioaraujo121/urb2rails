@@ -1,6 +1,7 @@
 RailsAdmin.config do |config|
   require Rails.root.join('lib', 'rails_admin', 'dashboard.rb')
   require Rails.root.join('lib', 'rails_admin', 'next_step.rb')
+  require Rails.root.join('lib', 'rails_admin', 'done.rb')
 
   ### Popular gems integration
 
@@ -11,7 +12,7 @@ RailsAdmin.config do |config|
   config.current_user_method(&:current_user)
 
   ## == CancanCan ==
-  # config.authorize_with :cancancan
+  config.authorize_with :cancancan
 
   ## == Pundit ==
   # config.authorize_with :pundit
@@ -36,6 +37,7 @@ RailsAdmin.config do |config|
     delete
     show_in_app
     next_step
+    done
 
     ## With an audit adapter, you can add:
     # history_index
