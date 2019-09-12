@@ -54,3 +54,4 @@ gem 'rails_admin', '~> 2.0'
 gem "devise"
 gem 'descriptive-statistics'
 gem 'time_difference'
+gem "cancan"
