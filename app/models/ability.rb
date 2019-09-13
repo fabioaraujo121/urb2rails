@@ -12,6 +12,9 @@ class Ability
     elsif user.normal?
         can :read, [Demand, Citizen]
         can :update, [Demand, Citizen]
+        can :create, [Demand, Citizen]
+        can :done, [Demand]
+        can :next_step, [Demand]
     end
     #
     # The first argument to `can` is the action you are giving the user 
