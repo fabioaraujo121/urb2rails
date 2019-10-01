@@ -4,7 +4,7 @@ class Demand < ApplicationRecord
   	has_many :owners
   	has_many :steps
 
-  	enum status: [:opened, :processing, :stopped, :done]
+  	enum status: [:opened, :processing, :stopped, :done, :archieved]
 
   	after_validation :set_protocol, on: :create
 

@@ -30,7 +30,7 @@ The application starts at /adm log in and enjoy
 - [ ] Passos do Tipo => Cadastrar usuários responsáveis pelos processos neste passo
 - [ ] Usuário normal visualizar apenas os processos que estão nos passos de sua responsabilidade
 - [ ] Novo Passo do Tipo traduzir o kind
-- [ ] Adicionar status de archieved (Processo)
+- [X] Adicionar status de archieved (Processo)
 - [ ] Adicionar campo de Serviço/Assunto no cadastro do Processo (Select Field)
 - [ ] Imprimir Capa do processo com dados
 - [ ] Alterar dados de cadastro do processo de acordo com a ficha
