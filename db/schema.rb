@@ -27,9 +27,11 @@ ActiveRecord::Schema.define(version: 2019_08_20_155450) do
 
   create_table "demands", force: :cascade do |t|
     t.string "description"
-    t.integer "status"
+    t.integer "status", default: 0
     t.bigint "kind_id"
     t.bigint "user_id"
+    t.datetime "done_at"
+    t.string "protocol"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["kind_id"], name: "index_demands_on_kind_id"
@@ -80,7 +82,7 @@ ActiveRecord::Schema.define(version: 2019_08_20_155450) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
-    t.integer "role"
+    t.integer "role", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "email", default: "", null: false

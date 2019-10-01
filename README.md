@@ -21,7 +21,7 @@ The application starts at /adm log in and enjoy
 - [ ] Search by protocol to check status (with login)
 - [ ] Cadastro com login do cidadão, e-mail para recuperação de senha
 - [ ] Traduzir enum do status do processo
-- [ ] Adicionar código do processo (xxx/ANO => 1212/2019)
+- [X] Adicionar código do processo (xxx/ANO => 1212/2019)
 - [ ] Mostrar campo de tempo válido (Processo)
 - [ ] Dashboard - Listar na ordem de duração (parado a mais tempo (em passos que o tempo não conta)) TOP 10
 - [ ] Validação do CPF e CNPJ
