@@ -24,7 +24,7 @@ The application starts at /adm log in and enjoy
 - [X] Adicionar código do processo (xxx/ANO => 1212/2019)
 - [ ] Mostrar campo de tempo válido (Processo)
 - [ ] Dashboard - Listar na ordem de duração (parado a mais tempo (em passos que o tempo não conta)) TOP 10
-- [ ] Validação do CPF e CNPJ
+- [X] Validação do CPF e CNPJ
 - [ ] Próximo passo (Processo) - adicionar o usuário responsável e o **usuário logado**
 - [ ] Próximo passo (Processo) == passar a bola para o usuário responsável
 - [ ] Passos do Tipo => Cadastrar usuários responsáveis pelos processos neste passo
