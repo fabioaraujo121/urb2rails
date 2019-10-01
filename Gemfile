@@ -55,3 +55,4 @@ gem "devise"
 gem 'descriptive-statistics'
 gem 'time_difference'
 gem "cancan"
+gem 'cpf_cnpj'

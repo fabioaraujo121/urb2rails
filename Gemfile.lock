@@ -68,6 +68,7 @@ GEM
     byebug (11.0.1)
     cancan (1.6.10)
     concurrent-ruby (1.1.5)
+    cpf_cnpj (0.5.0)
     crass (1.0.4)
     descriptive-statistics (2.2.0)
     devise (4.7.0)
@@ -250,6 +251,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   cancan
+  cpf_cnpj
   descriptive-statistics
   devise
   jbuilder (~> 2.7)
