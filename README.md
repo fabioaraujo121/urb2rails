@@ -33,7 +33,7 @@ The application starts at /adm log in and enjoy
 - [X] Adicionar status de archieved (Processo)
 - [ ] Adicionar campo de Serviço/Assunto no cadastro do Processo (Select Field)
 - [ ] Imprimir Capa do processo com dados
-- [ ] Alterar dados de cadastro do processo de acordo com a ficha
+- [X] Alterar dados de cadastro do processo de acordo com a ficha
 
 ### Dashboard
 
