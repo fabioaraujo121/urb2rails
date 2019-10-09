@@ -8,6 +8,13 @@ class CreateDemands < ActiveRecord::Migration[6.0]
       t.datetime :done_at
       t.string :protocol
 
+      t.string :address
+      t.string :neighborhood
+      t.string :block # Quadra
+      t.string :lot # Lote
+      t.string :allotment # Loteamento
+      t.string :subunit
+
       t.timestamps
     end
   end

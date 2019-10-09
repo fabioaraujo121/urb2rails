@@ -168,6 +168,8 @@ pt-BR:
         cpf: "CPF"
         cnpj: "CNPJ"
         user: "Usuário Responsável"
+        address: "Endereço"
+        phone: "Telefone"
         created_at: "Criado em"
         updated_at: "Atualizado em"
       step:
@@ -189,6 +191,12 @@ pt-BR:
         owners: "Propritários"
         steps: "Passos Dados"
         kind: "Tipo"
+        address: "Endereço"
+        neighborhood: "Bairro"
+        block: "Bloco"
+        lot: "Lote"
+        allotment: "Loteamento"
+        subunit: "Subunidade"
         created_at: "Criado em"
         updated_at: "Atualizado em"
       owner:
