@@ -25,10 +25,10 @@ The application starts at /adm log in and enjoy
 - [ ] Mostrar campo de tempo válido (Processo)
 - [ ] Dashboard - Listar na ordem de duração (parado a mais tempo (em passos que o tempo não conta)) TOP 10
 - [X] Validação do CPF e CNPJ
-- [ ] Próximo passo (Processo) - adicionar o usuário responsável e o **usuário logado**
-- [ ] Próximo passo (Processo) == passar a bola para o usuário responsável
-- [ ] Passos do Tipo => Cadastrar usuários responsáveis pelos processos neste passo
-- [ ] Usuário normal visualizar apenas os processos que estão nos passos de sua responsabilidade
+- [X] Próximo passo (Processo) - adicionar o usuário responsável e o **usuário logado**
+- [X] Próximo passo (Processo) == passar a bola para o usuário responsável
+- [X] Passos do Tipo => Cadastrar usuários responsáveis pelos processos neste passo
+- [X] Usuário normal visualizar apenas os processos que estão nos passos de sua responsabilidade
 - [ ] Novo Passo do Tipo traduzir o kind
 - [X] Adicionar status de archieved (Processo)
 - [ ] Adicionar campo de Serviço/Assunto no cadastro do Processo (Select Field)

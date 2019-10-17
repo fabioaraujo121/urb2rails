@@ -5,4 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
     enum role: [:normal, :admin]
+
+    has_many :kind_step_users
 end

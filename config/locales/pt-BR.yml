@@ -153,6 +153,9 @@ pt-BR:
       kind_step:
         one: "Passo do Tipo"
         other: "Passos do Tipo"
+      kind_step_user:
+        one: "Passo do Tipo (Usuários Responsáveis)"
+        other: "Passos do Tipo (Usuários Responsáveis)"
       owner:
         one: "Propritário"
         other: "Propritários"
@@ -184,6 +187,11 @@ pt-BR:
         valid_time: "Tempo Válido"
         created_at: "Criado em"
         updated_at: "Atualizado em"
+      kind_step_user: 
+        kind_step: "Passo do Tipo"
+        user: "Usuário Responsável"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
       demand:
         description: "Descrição"
         status: "Status"
@@ -197,6 +205,7 @@ pt-BR:
         lot: "Lote"
         allotment: "Loteamento"
         subunit: "Subunidade"
+        current_kind_step: "Atual Passo do Tipo"
         created_at: "Criado em"
         updated_at: "Atualizado em"
       owner:

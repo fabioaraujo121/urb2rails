@@ -2,6 +2,7 @@ RailsAdmin.config do |config|
   require Rails.root.join('lib', 'rails_admin', 'dashboard.rb')
   require Rails.root.join('lib', 'rails_admin', 'next_step.rb')
   require Rails.root.join('lib', 'rails_admin', 'done.rb')
+  require Rails.root.join('lib', 'rails_admin', 'index.rb')
 
   ### Popular gems integration
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_20_155450) do
+ActiveRecord::Schema.define(version: 2019_10_17_185215) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 2019_08_20_155450) do
     t.string "name"
     t.string "cpf"
     t.string "cnpj"
+    t.string "address"
+    t.string "phone"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -32,10 +34,26 @@ ActiveRecord::Schema.define(version: 2019_08_20_155450) do
     t.bigint "user_id"
     t.datetime "done_at"
     t.string "protocol"
+    t.string "address"
+    t.string "neighborhood"
+    t.string "block"
+    t.string "lot"
+    t.string "allotment"
+    t.string "subunit"
+    t.bigint "current_kind_step_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["kind_id"], name: "index_demands_on_kind_id"
     t.index ["user_id"], name: "index_demands_on_user_id"
+  end
+
+  create_table "kind_step_users", force: :cascade do |t|
+    t.bigint "kind_step_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["kind_step_id"], name: "index_kind_step_users_on_kind_step_id"
+    t.index ["user_id"], name: "index_kind_step_users_on_user_id"
   end
 
   create_table "kind_steps", force: :cascade do |t|
@@ -97,6 +115,8 @@ ActiveRecord::Schema.define(version: 2019_08_20_155450) do
   add_foreign_key "citizens", "users"
   add_foreign_key "demands", "kinds"
   add_foreign_key "demands", "users"
+  add_foreign_key "kind_step_users", "kind_steps"
+  add_foreign_key "kind_step_users", "users"
   add_foreign_key "kind_steps", "kinds"
   add_foreign_key "kind_steps", "users"
   add_foreign_key "kinds", "users"

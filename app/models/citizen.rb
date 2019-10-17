@@ -1,5 +1,7 @@
 class Citizen < ApplicationRecord
   	belongs_to :user
+  	has_many :owners
+  	has_many :demands, through: :owners
 
   	validate do
   		self.errors.add :cpf, " #{self.cpf} é inválido" if !self.cpf.blank? && !CPF.valid?(self.cpf)

@@ -3,6 +3,7 @@ class Demand < ApplicationRecord
   	belongs_to :kind
   	has_many :owners
   	has_many :steps
+    belongs_to :current_kind_step, foreign_key: "current_kind_step_id", class_name: "KindStep", optional: true
 
   	enum status: [:opened, :processing, :stopped, :done, :archieved]
 

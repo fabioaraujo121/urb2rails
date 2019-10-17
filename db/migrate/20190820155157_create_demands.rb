@@ -15,6 +15,8 @@ class CreateDemands < ActiveRecord::Migration[6.0]
       t.string :allotment # Loteamento
       t.string :subunit
 
+      t.bigint :current_kind_step_id
+
       t.timestamps
     end
   end
