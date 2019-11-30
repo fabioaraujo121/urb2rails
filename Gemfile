@@ -57,3 +57,7 @@ gem 'descriptive-statistics'
 gem 'time_difference'
 gem "cancan"
 gem 'cpf_cnpj'
+# Gem para gerar os pdfs
+gem 'prawn-rails'
+# Gem para gerar os gráficos
+gem 'gruff'

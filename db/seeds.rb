@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.create!(name: "Fábio", email: "fabioaraujo121@gmail.com", password: "123456") if User.find_by_email("fabioaraujo121@gmail.com").nil?
+User.create!(name: "ADM", email: "admurb2rails@caruaru.pe.gov.br", password: "123456") if User.find_by_email("admurb2rails@caruaru.pe.gov.br").nil?
 
 Kind.where(name: "Obra", user_id: 1).first_or_create
 KindStep.where(name: "Abertura", user_id: 1, kind_id: 1).first_or_create

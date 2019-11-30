@@ -3,6 +3,7 @@ RailsAdmin.config do |config|
   require Rails.root.join('lib', 'rails_admin', 'next_step.rb')
   require Rails.root.join('lib', 'rails_admin', 'done.rb')
   require Rails.root.join('lib', 'rails_admin', 'index.rb')
+  require Rails.root.join('lib', 'rails_admin', 'license.rb')
 
   ### Popular gems integration
 
@@ -39,6 +40,7 @@ RailsAdmin.config do |config|
     show_in_app
     next_step
     done
+    license
 
     ## With an audit adapter, you can add:
     # history_index

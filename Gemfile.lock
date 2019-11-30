@@ -81,6 +81,8 @@ GEM
     ffi (1.11.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    gruff (0.7.0)
+      rmagick (~> 2.13, >= 2.13.4)
     haml (5.1.2)
       temple (>= 0.8.0)
       tilt
@@ -128,7 +130,17 @@ GEM
     nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
+    pdf-core (0.7.0)
     pg (1.1.4)
+    prawn (2.2.2)
+      pdf-core (~> 0.7.0)
+      ttfunk (~> 1.5)
+    prawn-rails (1.3.0)
+      prawn
+      prawn-table
+      rails (>= 3.1.0)
+    prawn-table (0.2.2)
+      prawn (>= 1.3.0, < 3.0.0)
     puma (3.12.1)
     rack (2.0.7)
     rack-pjax (1.1.0)
@@ -187,6 +199,7 @@ GEM
     responders (3.0.0)
       actionpack (>= 5.0)
       railties (>= 5.0)
+    rmagick (2.16.0)
     ruby_dep (1.5.0)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -224,6 +237,7 @@ GEM
     tilt (2.0.9)
     time_difference (0.5.0)
       activesupport
+    ttfunk (1.5.1)
     turbolinks (5.2.0)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -255,9 +269,11 @@ DEPENDENCIES
   cpf_cnpj
   descriptive-statistics
   devise
+  gruff
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
+  prawn-rails
   puma (~> 3.11)
   railroady
   rails (~> 6.0.0)

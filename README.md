@@ -1,20 +1,31 @@
 # README
 
-This is the URB's process monitoring from PMC.
+Este é o sistema de monitoramento de processos da Secretaria de Urbanismo e Obras de Caruaru.
 
-This system deals with the process management of the Secretariat of Urbanism and Works.
+Este sistema lida com a abertura, andamento e finalização dos diversos processos de responsabilidade da secretaria.
 
-The application starts at /adm log in and enjoy
+Essa aplicação roda somente a partir de `/adm` sob acesso de usuário `admurb2rails@caruaru.pe.gov.br` e senha `123456`.
+
+## Install
+
+Para rodar localmente você deve seguit os passos de Deployment (logo abaixo). Para montar o servidor você pode seguir os passos [deste tutorial](https://www.phusionpassenger.com/library/walkthroughs/deploy/ruby/), no item 6 (Install Ruby) você pode ter alguma dificuldade com a instalação do RVM, mas ela não é essencial para o funcionamento do sistema, pode ser pulada (Mas lembre-se da versão do Ruby usada aqui).
+
+Além disto utilizaremos o ImageMagick para gerar o PDF do alvará e outros, guia de instalação [aqui](http://www.imagemagick.org/script/download.php)
+
+Após montar o servidor você ainda vai precisar seguir os passos de Deployment.
+
+Usaremos aqui o banco de dados PostgreSQL.
 
 
 ## Versions
 * Ruby: **2.6.3**
 * Rails: **6.0.0**
+* PostgreSQL: **11.4**
+* ImageMagick: **7.0.9**
 
 ## Deployment
-1. bundle install
-2. rails db:create db:migrate db:seed
-3. Done!
+1. `bundle install`
+2. `rails db:create db:migrate db:seed`
 
 ## TODO
 
@@ -34,6 +45,7 @@ The application starts at /adm log in and enjoy
 - [ ] Adicionar campo de Serviço/Assunto no cadastro do Processo (Select Field)
 - [ ] Imprimir Capa do processo com dados
 - [X] Alterar dados de cadastro do processo de acordo com a ficha
+- [ ] Gerar PDF do Alvará
 
 ### Dashboard
 
